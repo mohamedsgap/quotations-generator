@@ -12,4 +12,4 @@ generateButton.addEventListener('mouseout', () => {
     generateButton.style.backgroundColor= "chocolate";
 })
 
-
+console.log(typeof quotations)
