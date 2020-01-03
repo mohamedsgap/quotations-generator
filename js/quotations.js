@@ -1,4 +1,4 @@
-const quotations = [
+ const quotations = [
   {
     quotation: "Hard work beats talent when talent doesn’t work hard.",
     author: "Tim Notke",
@@ -224,5 +224,3 @@ const quotations = [
     category: "tech"
   }
 ];
-
-export default quotations;
