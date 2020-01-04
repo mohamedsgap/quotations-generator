@@ -52,3 +52,17 @@ function shuffle(array) {
 
   return array;
 }
+
+
+// built a function to get the number of generated quotes from the dropdown list
+const getQuotesNumber = () => {
+    valuesOfQuotes.addEventListener('change', (e)=>{
+    numberOfQuotes = parseInt(e.target.value);
+    })
+    return numberOfQuotes
+  }
+ 
+
+
+
+
