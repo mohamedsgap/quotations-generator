@@ -74,5 +74,39 @@ const getQuotesValue = () => {
 }
 
 
+/// built a function to render some of quotes depend on the number and type!
+function generateQuotes(getQuotesNumber,getQuotesValue) {
+  let quotesNumber = getQuotesNumber();
+  let quotesValue = getQuotesValue();
+
+  const quotesContainer = document.createElement('div');
+  quotesContainer.classList.add('quotes-container')
+
+  if (quotesValue === 'tech'){
+    for (let i = 0; i < quotesNumber; i++){
+      let quoteText = document.createElement('p');
+      shuffle(techQuotations);
+      techQuotations.forEach((quoteObject)=> {quoteText.innerHTML= `${quoteObject.quotation} ${quoteObject.author}`})
+      quotesContainer.appendChild(quoteText)
+      quotesContainer.appendChild(quoteText)
+    }
+    document.body.appendChild(quotesContainer);
+  } 
+  else if (quotesValue === 'sport') {
+    for (let i = 0; i < quotesNumber; i++){
+      let quoteText = document.createElement('p');
+      shuffle(sportQuotations);
+      sportQuotations.forEach((quoteObject)=> {quoteText.innerHTML= `${quoteObject.quotation} ${quoteObject.author}`})
+      quotesContainer.appendChild(quoteText)
+    }
+    document.body.appendChild(quotesContainer);
+  }
+}
+
+generateButton.addEventListener('click', () => {
+  generateQuotes(getQuotesNumber, getQuotesValue);
+});
+
+
 
 
