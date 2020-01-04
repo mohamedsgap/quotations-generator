@@ -62,6 +62,16 @@ const getQuotesNumber = () => {
     return numberOfQuotes
   }
  
+  // built a function to get value of checked quotes type!  
+const getQuotesValue = () => {
+  if (document.querySelector("#TechRadioBtn").checked){
+    return document.querySelector("#TechRadioBtn").value;
+  } else if (document.querySelector("#SportRadioBtn").checked) {
+    return document.querySelector("#SportRadioBtn").value;
+  } else {
+    return alert('Nothing has checked!')
+  }
+}
 
 
 
