@@ -15,10 +15,11 @@ const techInput = document.querySelector("#TechRadioBtn");
 // created a variable for sport quotes input.
 const sportInput = document.querySelector("#SportRadioBtn");
 
-// created a varible for dorpdown list value
+// created a varibles for dorpdown list values
 let valuesOfQuotes = document.querySelector("#QuotesNumbers");
 let numberOfQuotes = parseInt(document.querySelector("#QuotesNumbers").value);
 
+// tested some case with eventListener!
 valuesOfQuotes.addEventListener('change', (e)=>{
     numberOfQuotes = parseInt(e.target.value);
     console.log(`The number of quotes equals ${numberOfQuotes}`);
@@ -31,3 +32,23 @@ techInput.addEventListener('change', ()=> {
 sportInput.addEventListener('change', ()=> {
     console.log(`${document.querySelector("#SportRadioBtn").value} has been checked`)
 })
+
+// A function to random the quotes!
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
