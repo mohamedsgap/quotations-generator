@@ -10,3 +10,13 @@ h1 {
 .btn {
     background-color: chocolate;
 }
+
+.quotes-container {
+  background-color: darkkhaki;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  border: 1px solid yellow;
+  padding: 10px;
+  border-radius: 5%;
+}
