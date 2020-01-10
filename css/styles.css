@@ -8,8 +8,11 @@ h1 {
   font-style: italic;
   color: white;
 }
-.btn {
+#btn-generate {
   background-color: darkmagenta;
+}
+#btn-delete {
+  background-color: deeppink;
 }
 
 .quotes-container {
