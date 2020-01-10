@@ -1,22 +1,28 @@
 body {
-  background-color: blanchedalmond;
+  /*ackground-color: blanchedalmond;*/
+  background: linear-gradient(260deg, #f5ad42 50%, #f5e642 100%);
 }
 h1 {
   text-align: center;
   padding-top: 3rem;
   font-style: italic;
-  color: brown;
+  color: white;
 }
 .btn {
-    background-color: chocolate;
+  background-color: darkmagenta;
 }
 
 .quotes-container {
-  background-color: darkkhaki;
+  background-color: #C13100;
   margin: auto;
   width: 50%;
   height: 50%;
-  border: 1px solid yellow;
+  border: 3px solid #FFFBD0;
   padding: 10px;
-  border-radius: 5%;
+  color: white;
+  font-size: 20px;
+}
+label {
+  color: white;
+  font-size: 25px;
 }
