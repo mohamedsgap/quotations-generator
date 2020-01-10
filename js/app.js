@@ -1,5 +1,8 @@
-// change the backgroudColor of generateButton when the mouse over and out!
-const generateButton = document.querySelector(".btn");
+
+const generateButton = document.querySelector("#btn-generate");
+const deleteButton = document.querySelector('#btn-delete');
+
+// change the backgroudColor of Buttons when  mouse over/out!
 
 generateButton.addEventListener("mouseover", () => {
   generateButton.style.backgroundColor = "deeppink";
@@ -7,6 +10,14 @@ generateButton.addEventListener("mouseover", () => {
 
 generateButton.addEventListener("mouseout", () => {
   generateButton.style.backgroundColor = "darkmagenta";
+});
+
+deleteButton.addEventListener("mouseover", () => {
+  deleteButton.style.backgroundColor = "darkmagenta";
+});
+
+deleteButton.addEventListener("mouseout", () => {
+  deleteButton.style.backgroundColor = "deeppink";
 });
 
 // created a variable for tech quotes input.
@@ -61,14 +72,14 @@ const getQuotesValue = () => {
   }
 };
 
+const quotesContainer = document.createElement("div");
+quotesContainer.classList.add("quotes-container");
+
 /// built a function to render some of quotes depend on the number and type!
 function generateQuotes(getQuotesNumber, getQuotesValue) {
   let quotesNumber = getQuotesNumber();
   let quotesValue = getQuotesValue();
   const quoteType = ["tech", "sport"];
-
-  const quotesContainer = document.createElement("div");
-  quotesContainer.classList.add("quotes-container");
 
   if (quotesValue === quoteType[0]) {
     for (let i = 0; i < quotesNumber; i++) {
@@ -97,3 +108,8 @@ function generateQuotes(getQuotesNumber, getQuotesValue) {
 generateButton.addEventListener("click", () => {
   generateQuotes(getQuotesNumber, getQuotesValue);
 });
+
+deleteButton.addEventListener('click', ()=> {
+  quotesContainer.innerHTML = '';
+  quotesContainer.parentNode.removeChild(quotesContainer);
+})
