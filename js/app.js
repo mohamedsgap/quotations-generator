@@ -19,9 +19,14 @@ const sportInput = document.querySelector("#SportRadioBtn");
 let valuesOfQuotes = document.querySelector("#QuotesNumbers");
 let numberOfQuotes = parseInt(document.querySelector("#QuotesNumbers").value);
 
+// checking that certained number of quotes has been selected.
+valuesOfQuotes.addEventListener('change', (e)=>{
+  numberOfQuotes = parseInt(e.target.value);
+})
+
 // A function to random the quotes!
 function shuffle(array) {
-  var currentIndex = array.length,
+  let currentIndex = array.length,
     temporaryValue,
     randomIndex;
 
@@ -42,9 +47,6 @@ function shuffle(array) {
 
 // built a function to get the number of generated quotes from the dropdown list
 const getQuotesNumber = () => {
-  valuesOfQuotes.addEventListener("change", e => {
-    numberOfQuotes = parseInt(e.target.value);
-  });
   return numberOfQuotes;
 };
 
@@ -76,9 +78,9 @@ function generateQuotes(getQuotesNumber, getQuotesValue) {
         quoteText.innerHTML = `${quoteObject.quotation} ${quoteObject.author}`;
       });
       quotesContainer.appendChild(quoteText);
-      quotesContainer.appendChild(quoteText);
     }
     document.body.appendChild(quotesContainer);
+    
   } else if (quotesValue === quoteType[1]) {
     for (let i = 0; i < quotesNumber; i++) {
       let quoteText = document.createElement("p");
