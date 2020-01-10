@@ -2,11 +2,11 @@
 const generateButton = document.querySelector(".btn");
 
 generateButton.addEventListener("mouseover", () => {
-  generateButton.style.backgroundColor = "crimson";
+  generateButton.style.backgroundColor = "deeppink";
 });
 
 generateButton.addEventListener("mouseout", () => {
-  generateButton.style.backgroundColor = "chocolate";
+  generateButton.style.backgroundColor = "darkmagenta";
 });
 
 // created a variable for tech quotes input.
@@ -80,7 +80,7 @@ function generateQuotes(getQuotesNumber, getQuotesValue) {
       quotesContainer.appendChild(quoteText);
     }
     document.body.appendChild(quotesContainer);
-    
+
   } else if (quotesValue === quoteType[1]) {
     for (let i = 0; i < quotesNumber; i++) {
       let quoteText = document.createElement("p");
