@@ -1,5 +1,4 @@
 body {
-  /*ackground-color: blanchedalmond;*/
   background: linear-gradient(260deg, #f5ad42 50%, #f5e642 100%);
 }
 h1 {
@@ -17,14 +16,19 @@ h1 {
 
 .quotes-container {
   background-color: #C13100;
-  margin: auto;
-  width: 50%;
-  height: 50%;
   border: 3px solid #FFFBD0;
-  padding: 10px;
   color: white;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  padding: auto;
 }
+
 label {
   color: white;
   font-size: 25px;
