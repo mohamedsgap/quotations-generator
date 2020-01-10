@@ -1,5 +1,8 @@
 body {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(260deg, #f5ad42 50%, #f5e642 100%);
+  height: 100%;
 }
 h1 {
   text-align: center;
@@ -9,18 +12,18 @@ h1 {
 }
 #btn-generate {
   background-color: darkmagenta;
+  margin-bottom: 10px;
 }
 #btn-delete {
   background-color: deeppink;
+  margin-bottom: 10px;
 }
 
 .quotes-container {
-  background-color: #C13100;
-  border: 3px solid #FFFBD0;
-  color: white;
+  background-color: #fdecd3;
+  border: 3px solid #965d08;
   font-size: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 50%;
@@ -32,4 +35,12 @@ h1 {
 label {
   color: white;
   font-size: 25px;
+}
+
+footer {
+  font-size: 20px;
+  color: white;
+}
+footer a {
+  color: deeppink;
 }
