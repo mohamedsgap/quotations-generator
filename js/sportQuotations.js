@@ -67,35 +67,35 @@ const sportQuotations = [
   {
     quotation:
       "I’ve failed over and over and over again in my life. And that is why I succeed.",
+    author: "Michael Jordan",
+    category: "sport"
+  },
+  {
+    quotation:
+      "It’s not whether you get knocked down; it’s whether you get up.",
     author: "Vince Lombardi",
     category: "sport"
   },
   {
     quotation:
-      "“It’s not whether you get knocked down; it’s whether you get up.",
+      "Do you know what my favorite part of the game is? The opportunity to play.",
     author: "Mike Singletary",
     category: "sport"
   },
   {
     quotation:
-      "Do you know what my favorite part of the game is? The opportunity to play.",
+      "The more difficult the victory, the greater the happiness in winning.",
     author: "Pele",
     category: "sport"
   },
   {
-    quotation:
-      "The more difficult the victory, the greater the happiness in winning.",
+    quotation: "Nobody who ever gave his best regretted it.",
     author: "George Halas",
     category: "sport"
   },
   {
-    quotation: "Nobody who ever gave his best regretted it.",
-    author: "John Wooden",
-    category: "sport"
-  },
-  {
     quotation: "Do not let what you can not do interfere with what you can do.",
-    author: "",
+    author: "John Wooden",
     category: "sport"
   },
   {

@@ -1,6 +1,5 @@
-
 const generateButton = document.querySelector("#btn-generate");
-const deleteButton = document.querySelector('#btn-delete');
+const deleteButton = document.querySelector("#btn-delete");
 
 // change the backgroudColor of Buttons when  mouse over/out!
 
@@ -31,9 +30,9 @@ let valuesOfQuotes = document.querySelector("#QuotesNumbers");
 let numberOfQuotes = parseInt(document.querySelector("#QuotesNumbers").value);
 
 // checking that certained number of quotes has been selected.
-valuesOfQuotes.addEventListener('change', (e)=>{
+valuesOfQuotes.addEventListener("change", e => {
   numberOfQuotes = parseInt(e.target.value);
-})
+});
 
 // A function to random the quotes!
 function shuffle(array) {
@@ -91,7 +90,6 @@ function generateQuotes(getQuotesNumber, getQuotesValue) {
       quotesContainer.appendChild(quoteText);
     }
     document.body.appendChild(quotesContainer);
-
   } else if (quotesValue === quoteType[1]) {
     for (let i = 0; i < quotesNumber; i++) {
       let quoteText = document.createElement("p");
@@ -109,7 +107,7 @@ generateButton.addEventListener("click", () => {
   generateQuotes(getQuotesNumber, getQuotesValue);
 });
 
-deleteButton.addEventListener('click', ()=> {
-  quotesContainer.innerHTML = '';
+deleteButton.addEventListener("click", () => {
+  quotesContainer.innerHTML = "";
   quotesContainer.parentNode.removeChild(quotesContainer);
-})
+});

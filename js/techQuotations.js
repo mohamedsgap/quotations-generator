@@ -14,7 +14,7 @@ const techQuotations = [
   {
     quotation:
       "We are stuck with technology when what we really want is just stuff that works.",
-    author: " Douglas Adams",
+    author: "Douglas Adams",
     category: "tech"
   },
   {
@@ -32,7 +32,7 @@ const techQuotations = [
   {
     quotation:
       "I know there's a proverb which that says 'To err is human,' but a human error is nothing to what a computer can do if it tries.",
-    author: " Agatha Christie",
+    author: "Agatha Christie",
     category: "tech"
   },
   {
@@ -55,7 +55,7 @@ const techQuotations = [
   {
     quotation:
       "Even the technology that promises to unite us, divides us. Each of us is now electronically connected to the globe, and yet we feel utterly alone.",
-    author: " Dan Brown",
+    author: "Dan Brown",
     category: "tech"
   },
   {
