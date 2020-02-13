@@ -1,0 +1,40 @@
+Arguments: 
+  /snap/node/2485/bin/node /home/mohamedsgap/.yarn/bin/yarnpkg config get registry
+
+PATH: 
+  /home/mohamedsgap/.yarn/bin:/home/mohamedsgap/.config/yarn/global/node_modules/.bin:/home/mohamedsgap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.19.2
+
+Node version: 
+  10.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, write
+      at writeSync (fs.js:573:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:22:3)
+      at doWrite (_stream_writable.js:415:12)
+      at writeOrBuffer (_stream_writable.js:399:5)
+      at SyncWriteStream.Writable.write (_stream_writable.js:299:11)
+      at ConsoleReporter._log (/home/mohamedsgap/.yarn/lib/cli.js:96646:17)
+      at ConsoleReporter.log (/home/mohamedsgap/.yarn/lib/cli.js:96634:10)
+      at get (/home/mohamedsgap/.yarn/lib/cli.js:87475:14)
+      at Object.<anonymous> (/home/mohamedsgap/.yarn/lib/cli.js:25940:25)
+      at Generator.next (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
