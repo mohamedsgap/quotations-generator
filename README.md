@@ -1,6 +1,8 @@
 # Quotations Generator
 Builing quotations generator in Vanilla JavaScript
 
+**New Update** Added a react version of Quote generator
+
 ## About 
 
 ### Step 1: Random quotes
