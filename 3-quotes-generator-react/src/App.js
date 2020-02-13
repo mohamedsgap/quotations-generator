@@ -25,14 +25,14 @@ class App extends React.Component{
     })
   }
 
-  /*
+  
   deleteQuotes = (e) => {
     e.preventDefault();
     this.setState({
       generatedQuotes: []
     })
   }
-  */
+  
 
   generatedQuotes = (e) => {
     let gq = this.state.generatedQuotes;
@@ -57,7 +57,8 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <h1>Quote Generator</h1>
+        <h1 className="title">Quote Generator</h1>
+        <div className="form-content">
         <form onSubmit={this.generatedQuotes}>
         <label><input type="radio"  value="tech" name='quote' onChange={this.selectedQuotesType}/>Tech</label>
         <label><input type="radio" value="sport" name='quote'onChange={this.selectedQuotesType}/>Sport</label>
@@ -69,14 +70,19 @@ class App extends React.Component{
           <option value="4">Four quotes</option>
           <option value="5">Five quotes</option>
         </select>
-        <button type="submit" onClick={this.generatedQuotes}>Generate</button>
         </form>
+        </div>
+        <div className="buttons-app">
+        <button className="gen-btn" type="submit" onClick={this.generatedQuotes}>Generate</button>
+        <button className="del-btn" onClick={this.deleteQuotes}>Delete</button>
+        </div>
+        <div className="container">
         <div>{this.state.generatedQuotes.map(smallQuote=> {
               return (
                 <li key={Math.random()} >{smallQuote}</li>
         )
         })}</div>
-
+        </div>
       </div>
     );
   }
